@@ -39,6 +39,7 @@ class VideoPlayer extends Component {
         playerOptions.width = props.width;
         playerOptions.height = props.height;
         playerOptions.bigPlayButton = props.bigPlayButton;
+        playerOptions.crossOrigin = props.crossOrigin;
         const hidePlaybackRates = props.hidePlaybackRates || props.hideControls.includes('playbackrates');
         if (!hidePlaybackRates) playerOptions.playbackRates = props.playbackRates;
         return playerOptions;
